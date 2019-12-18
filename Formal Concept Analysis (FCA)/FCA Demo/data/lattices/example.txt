@@ -1,0 +1,31 @@
+<Lattice object of 8 atoms 30 concepts 6 coatoms at 0x1041c3490>
+    {} <-> [Milk Bread Butter Beer Diapers Soap Biscuit]
+    {Luigi} <-> [Beer Diapers] <=> Luigi
+    {Giuseppe} <-> [Milk Butter Soap Biscuit] <=> Giuseppe
+    {Andrea} <-> [Milk Butter Diapers Soap] <=> Andrea
+    {Angelo} <-> [Bread Beer Soap] <=> Angelo
+    {Lucia} <-> [Milk Beer Soap Biscuit] <=> Lucia
+    {Daniela} <-> [Milk Bread Diapers Soap Biscuit] <=> Daniela
+    {Mario, Daniela} <-> [Milk Bread Soap Biscuit] <=> Mario
+    {Caio, Antonio} <-> [Milk Bread Butter Biscuit] <=> Caio Antonio
+    {Giuseppe, Andrea} <-> [Milk Butter Soap]
+    {Andrea, Daniela} <-> [Milk Diapers Soap]
+    {Angelo, Lucia} <-> [Beer Soap]
+    {Mattia, Gennaro} <-> [Bread Butter Beer] <=> Mattia Gennaro
+    {Luigi, Andrea, Daniela} <-> [Diapers] <=> Diapers
+    {Caio, Giuseppe, Antonio} <-> [Milk Butter Biscuit]
+    {Angelo, Mattia, Gennaro} <-> [Bread Beer]
+    {Vito, Mattia, Gennaro} <-> [Butter Beer] <=> Vito
+    {Mario, Caio, Antonio, Daniela} <-> [Milk Bread Biscuit]
+    {Mario, Luca, Angelo, Daniela} <-> [Bread Soap] <=> Luca
+    {Mario, Giuseppe, Lucia, Daniela} <-> [Milk Soap Biscuit]
+    {Caio, Giuseppe, Andrea, Antonio} <-> [Milk Butter]
+    {Caio, Antonio, Mattia, Gennaro} <-> [Bread Butter]
+    {Mario, Giuseppe, Andrea, Lucia, Daniela} <-> [Milk Soap]
+    {Mario, Caio, Giuseppe, Antonio, Lucia, Daniela} <-> [Milk Biscuit] <=> Biscuit
+    {Luigi, Angelo, Vito, Lucia, Mattia, Gennaro} <-> [Beer] <=> Beer
+    {Mario, Caio, Giuseppe, Andrea, Antonio, Lucia, Daniela} <-> [Milk] <=> Milk
+    {Mario, Luca, Giuseppe, Andrea, Angelo, Lucia, Daniela} <-> [Soap] <=> Soap
+    {Mario, Caio, Luca, Angelo, Antonio, Mattia, Daniela, Gennaro} <-> [Bread] <=> Bread
+    {Nicola, Caio, Giuseppe, Andrea, Antonio, Vito, Mattia, Gennaro} <-> [Butter] <=> Nicola <=> Butter
+    {Mario, Nicola, Luigi, Caio, Luca, Giuseppe, Andrea, Angelo, Antonio, Vito, Lucia, Mattia, Daniela, Gennaro} <-> []

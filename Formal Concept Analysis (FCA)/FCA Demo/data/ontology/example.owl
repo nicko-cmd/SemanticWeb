@@ -1,0 +1,910 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://example.org/data"
+         xmlns="http://example.org/data#">
+
+<owl:Ontology rdf:about="http://example.org/data"/>
+
+<owl:ObjectProperty rdf:about="#isRelated0">
+  <rdfs:domain rdf:resource="#Beer"/>
+  <rdfs:range rdf:resource="#Diapers"/>
+  <owl:inverseOf rdf:resource="#isRelated1"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated1">
+  <rdfs:domain rdf:resource="#Diapers"/>
+  <rdfs:range rdf:resource="#Beer"/>
+  <owl:inverseOf rdf:resource="#isRelated0"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated2">
+  <rdfs:domain rdf:resource="#Beer,Soap"/>
+  <rdfs:range rdf:resource="#Bread"/>
+  <owl:inverseOf rdf:resource="#isRelated3"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated3">
+  <rdfs:domain rdf:resource="#Bread"/>
+  <rdfs:range rdf:resource="#Beer,Soap"/>
+  <owl:inverseOf rdf:resource="#isRelated2"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated4">
+  <rdfs:domain rdf:resource="#Bread,Beer"/>
+  <rdfs:range rdf:resource="#Soap"/>
+  <owl:inverseOf rdf:resource="#isRelated5"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated5">
+  <rdfs:domain rdf:resource="#Soap"/>
+  <rdfs:range rdf:resource="#Bread,Beer"/>
+  <owl:inverseOf rdf:resource="#isRelated4"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated6">
+  <rdfs:domain rdf:resource="#Bread,Beer"/>
+  <rdfs:range rdf:resource="#Butter"/>
+  <owl:inverseOf rdf:resource="#isRelated7"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated7">
+  <rdfs:domain rdf:resource="#Butter"/>
+  <rdfs:range rdf:resource="#Bread,Beer"/>
+  <owl:inverseOf rdf:resource="#isRelated6"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated8">
+  <rdfs:domain rdf:resource="#Butter,Beer"/>
+  <rdfs:range rdf:resource="#Bread"/>
+  <owl:inverseOf rdf:resource="#isRelated9"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated9">
+  <rdfs:domain rdf:resource="#Bread"/>
+  <rdfs:range rdf:resource="#Butter,Beer"/>
+  <owl:inverseOf rdf:resource="#isRelated8"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated10">
+  <rdfs:domain rdf:resource="#Bread,Soap"/>
+  <rdfs:range rdf:resource="#Beer"/>
+  <owl:inverseOf rdf:resource="#isRelated11"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated11">
+  <rdfs:domain rdf:resource="#Beer"/>
+  <rdfs:range rdf:resource="#Bread,Soap"/>
+  <owl:inverseOf rdf:resource="#isRelated10"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated12">
+  <rdfs:domain rdf:resource="#Milk,Butter"/>
+  <rdfs:range rdf:resource="#Soap"/>
+  <owl:inverseOf rdf:resource="#isRelated13"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated13">
+  <rdfs:domain rdf:resource="#Soap"/>
+  <rdfs:range rdf:resource="#Milk,Butter"/>
+  <owl:inverseOf rdf:resource="#isRelated12"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated14">
+  <rdfs:domain rdf:resource="#Milk,Butter"/>
+  <rdfs:range rdf:resource="#Biscuit"/>
+  <owl:inverseOf rdf:resource="#isRelated15"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated15">
+  <rdfs:domain rdf:resource="#Biscuit"/>
+  <rdfs:range rdf:resource="#Milk,Butter"/>
+  <owl:inverseOf rdf:resource="#isRelated14"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated16">
+  <rdfs:domain rdf:resource="#Bread,Butter"/>
+  <rdfs:range rdf:resource="#Beer"/>
+  <owl:inverseOf rdf:resource="#isRelated17"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated17">
+  <rdfs:domain rdf:resource="#Beer"/>
+  <rdfs:range rdf:resource="#Bread,Butter"/>
+  <owl:inverseOf rdf:resource="#isRelated16"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated18">
+  <rdfs:domain rdf:resource="#Milk,Soap"/>
+  <rdfs:range rdf:resource="#Butter"/>
+  <owl:inverseOf rdf:resource="#isRelated19"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated19">
+  <rdfs:domain rdf:resource="#Butter"/>
+  <rdfs:range rdf:resource="#Milk,Soap"/>
+  <owl:inverseOf rdf:resource="#isRelated18"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated20">
+  <rdfs:domain rdf:resource="#Milk,Soap"/>
+  <rdfs:range rdf:resource="#Diapers"/>
+  <owl:inverseOf rdf:resource="#isRelated21"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated21">
+  <rdfs:domain rdf:resource="#Diapers"/>
+  <rdfs:range rdf:resource="#Milk,Soap"/>
+  <owl:inverseOf rdf:resource="#isRelated20"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated22">
+  <rdfs:domain rdf:resource="#Milk,Soap"/>
+  <rdfs:range rdf:resource="#Biscuit"/>
+  <owl:inverseOf rdf:resource="#isRelated23"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated23">
+  <rdfs:domain rdf:resource="#Biscuit"/>
+  <rdfs:range rdf:resource="#Milk,Soap"/>
+  <owl:inverseOf rdf:resource="#isRelated22"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated24">
+  <rdfs:domain rdf:resource="#Milk,Biscuit"/>
+  <rdfs:range rdf:resource="#Butter"/>
+  <owl:inverseOf rdf:resource="#isRelated25"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated25">
+  <rdfs:domain rdf:resource="#Butter"/>
+  <rdfs:range rdf:resource="#Milk,Biscuit"/>
+  <owl:inverseOf rdf:resource="#isRelated24"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated26">
+  <rdfs:domain rdf:resource="#Milk,Biscuit"/>
+  <rdfs:range rdf:resource="#Bread"/>
+  <owl:inverseOf rdf:resource="#isRelated27"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated27">
+  <rdfs:domain rdf:resource="#Bread"/>
+  <rdfs:range rdf:resource="#Milk,Biscuit"/>
+  <owl:inverseOf rdf:resource="#isRelated26"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated28">
+  <rdfs:domain rdf:resource="#Milk,Biscuit"/>
+  <rdfs:range rdf:resource="#Soap"/>
+  <owl:inverseOf rdf:resource="#isRelated29"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated29">
+  <rdfs:domain rdf:resource="#Soap"/>
+  <rdfs:range rdf:resource="#Milk,Biscuit"/>
+  <owl:inverseOf rdf:resource="#isRelated28"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated30">
+  <rdfs:domain rdf:resource="#Milk,Butter,Soap"/>
+  <rdfs:range rdf:resource="#Biscuit"/>
+  <owl:inverseOf rdf:resource="#isRelated31"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated31">
+  <rdfs:domain rdf:resource="#Biscuit"/>
+  <rdfs:range rdf:resource="#Milk,Butter,Soap"/>
+  <owl:inverseOf rdf:resource="#isRelated30"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated32">
+  <rdfs:domain rdf:resource="#Milk,Butter,Soap"/>
+  <rdfs:range rdf:resource="#Diapers"/>
+  <owl:inverseOf rdf:resource="#isRelated33"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated33">
+  <rdfs:domain rdf:resource="#Diapers"/>
+  <rdfs:range rdf:resource="#Milk,Butter,Soap"/>
+  <owl:inverseOf rdf:resource="#isRelated32"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated34">
+  <rdfs:domain rdf:resource="#Milk,Diapers,Soap"/>
+  <rdfs:range rdf:resource="#Butter"/>
+  <owl:inverseOf rdf:resource="#isRelated35"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated35">
+  <rdfs:domain rdf:resource="#Butter"/>
+  <rdfs:range rdf:resource="#Milk,Diapers,Soap"/>
+  <owl:inverseOf rdf:resource="#isRelated34"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated36">
+  <rdfs:domain rdf:resource="#Milk,Butter,Biscuit"/>
+  <rdfs:range rdf:resource="#Soap"/>
+  <owl:inverseOf rdf:resource="#isRelated37"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated37">
+  <rdfs:domain rdf:resource="#Soap"/>
+  <rdfs:range rdf:resource="#Milk,Butter,Biscuit"/>
+  <owl:inverseOf rdf:resource="#isRelated36"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated38">
+  <rdfs:domain rdf:resource="#Milk,Butter,Biscuit"/>
+  <rdfs:range rdf:resource="#Bread"/>
+  <owl:inverseOf rdf:resource="#isRelated39"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated39">
+  <rdfs:domain rdf:resource="#Bread"/>
+  <rdfs:range rdf:resource="#Milk,Butter,Biscuit"/>
+  <owl:inverseOf rdf:resource="#isRelated38"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated40">
+  <rdfs:domain rdf:resource="#Milk,Bread,Biscuit"/>
+  <rdfs:range rdf:resource="#Soap"/>
+  <owl:inverseOf rdf:resource="#isRelated41"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated41">
+  <rdfs:domain rdf:resource="#Soap"/>
+  <rdfs:range rdf:resource="#Milk,Bread,Biscuit"/>
+  <owl:inverseOf rdf:resource="#isRelated40"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated42">
+  <rdfs:domain rdf:resource="#Milk,Bread,Biscuit"/>
+  <rdfs:range rdf:resource="#Butter"/>
+  <owl:inverseOf rdf:resource="#isRelated43"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated43">
+  <rdfs:domain rdf:resource="#Butter"/>
+  <rdfs:range rdf:resource="#Milk,Bread,Biscuit"/>
+  <owl:inverseOf rdf:resource="#isRelated42"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated44">
+  <rdfs:domain rdf:resource="#Milk,Soap,Biscuit"/>
+  <rdfs:range rdf:resource="#Butter"/>
+  <owl:inverseOf rdf:resource="#isRelated45"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated45">
+  <rdfs:domain rdf:resource="#Butter"/>
+  <rdfs:range rdf:resource="#Milk,Soap,Biscuit"/>
+  <owl:inverseOf rdf:resource="#isRelated44"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated46">
+  <rdfs:domain rdf:resource="#Milk,Soap,Biscuit"/>
+  <rdfs:range rdf:resource="#Beer"/>
+  <owl:inverseOf rdf:resource="#isRelated47"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated47">
+  <rdfs:domain rdf:resource="#Beer"/>
+  <rdfs:range rdf:resource="#Milk,Soap,Biscuit"/>
+  <owl:inverseOf rdf:resource="#isRelated46"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated48">
+  <rdfs:domain rdf:resource="#Milk,Soap,Biscuit"/>
+  <rdfs:range rdf:resource="#Bread"/>
+  <owl:inverseOf rdf:resource="#isRelated49"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated49">
+  <rdfs:domain rdf:resource="#Bread"/>
+  <rdfs:range rdf:resource="#Milk,Soap,Biscuit"/>
+  <owl:inverseOf rdf:resource="#isRelated48"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated50">
+  <rdfs:domain rdf:resource="#Milk,Bread,Soap,Biscuit"/>
+  <rdfs:range rdf:resource="#Diapers"/>
+  <owl:inverseOf rdf:resource="#isRelated51"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isRelated51">
+  <rdfs:domain rdf:resource="#Diapers"/>
+  <rdfs:range rdf:resource="#Milk,Bread,Soap,Biscuit"/>
+  <owl:inverseOf rdf:resource="#isRelated50"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies0">
+  <rdfs:domain rdf:resource="#Beer"/>
+  <rdfs:range rdf:resource="#Bread"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies1">
+  <rdfs:domain rdf:resource="#Beer"/>
+  <rdfs:range rdf:resource="#Butter"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies2">
+  <rdfs:domain rdf:resource="#Biscuit"/>
+  <rdfs:range rdf:resource="#Bread"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.67</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies3">
+  <rdfs:domain rdf:resource="#Bread"/>
+  <rdfs:range rdf:resource="#Biscuit"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies4">
+  <rdfs:domain rdf:resource="#Biscuit"/>
+  <rdfs:range rdf:resource="#Butter"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies5">
+  <rdfs:domain rdf:resource="#Biscuit"/>
+  <rdfs:range rdf:resource="#Milk"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 1.0</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies6">
+  <rdfs:domain rdf:resource="#Milk"/>
+  <rdfs:range rdf:resource="#Biscuit"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.86</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies7">
+  <rdfs:domain rdf:resource="#Biscuit"/>
+  <rdfs:range rdf:resource="#Soap"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.67</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies8">
+  <rdfs:domain rdf:resource="#Soap"/>
+  <rdfs:range rdf:resource="#Biscuit"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.57</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies9">
+  <rdfs:domain rdf:resource="#Bread"/>
+  <rdfs:range rdf:resource="#Butter"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies10">
+  <rdfs:domain rdf:resource="#Butter"/>
+  <rdfs:range rdf:resource="#Bread"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies11">
+  <rdfs:domain rdf:resource="#Bread"/>
+  <rdfs:range rdf:resource="#Milk"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies12">
+  <rdfs:domain rdf:resource="#Milk"/>
+  <rdfs:range rdf:resource="#Bread"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.57</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies13">
+  <rdfs:domain rdf:resource="#Bread"/>
+  <rdfs:range rdf:resource="#Soap"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies14">
+  <rdfs:domain rdf:resource="#Soap"/>
+  <rdfs:range rdf:resource="#Bread"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.57</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies15">
+  <rdfs:domain rdf:resource="#Butter"/>
+  <rdfs:range rdf:resource="#Milk"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies16">
+  <rdfs:domain rdf:resource="#Milk"/>
+  <rdfs:range rdf:resource="#Butter"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.57</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies17">
+  <rdfs:domain rdf:resource="#Diapers"/>
+  <rdfs:range rdf:resource="#Milk"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.67</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies18">
+  <rdfs:domain rdf:resource="#Diapers"/>
+  <rdfs:range rdf:resource="#Soap"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.67</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies19">
+  <rdfs:domain rdf:resource="#Milk"/>
+  <rdfs:range rdf:resource="#Soap"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.71</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies20">
+  <rdfs:domain rdf:resource="#Soap"/>
+  <rdfs:range rdf:resource="#Milk"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.71</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies21">
+  <rdfs:domain rdf:resource="#Beer,Bread"/>
+  <rdfs:range rdf:resource="#Butter"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.67</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies22">
+  <rdfs:domain rdf:resource="#Beer,Butter"/>
+  <rdfs:range rdf:resource="#Bread"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.67</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies23">
+  <rdfs:domain rdf:resource="#Butter,Bread"/>
+  <rdfs:range rdf:resource="#Beer"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies24">
+  <rdfs:domain rdf:resource="#Bread,Biscuit"/>
+  <rdfs:range rdf:resource="#Butter"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies25">
+  <rdfs:domain rdf:resource="#Butter,Biscuit"/>
+  <rdfs:range rdf:resource="#Bread"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.67</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies26">
+  <rdfs:domain rdf:resource="#Butter,Bread"/>
+  <rdfs:range rdf:resource="#Biscuit"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies27">
+  <rdfs:domain rdf:resource="#Biscuit"/>
+  <rdfs:range rdf:resource="#Milk,Bread"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.67</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies28">
+  <rdfs:domain rdf:resource="#Bread"/>
+  <rdfs:range rdf:resource="#Milk,Biscuit"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies29">
+  <rdfs:domain rdf:resource="#Milk"/>
+  <rdfs:range rdf:resource="#Biscuit,Bread"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.57</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies30">
+  <rdfs:domain rdf:resource="#Bread,Biscuit"/>
+  <rdfs:range rdf:resource="#Milk"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 1.0</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies31">
+  <rdfs:domain rdf:resource="#Milk,Biscuit"/>
+  <rdfs:range rdf:resource="#Bread"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.67</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies32">
+  <rdfs:domain rdf:resource="#Milk,Bread"/>
+  <rdfs:range rdf:resource="#Biscuit"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 1.0</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies33">
+  <rdfs:domain rdf:resource="#Bread,Biscuit"/>
+  <rdfs:range rdf:resource="#Soap"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies34">
+  <rdfs:domain rdf:resource="#Soap,Biscuit"/>
+  <rdfs:range rdf:resource="#Bread"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies35">
+  <rdfs:domain rdf:resource="#Soap,Bread"/>
+  <rdfs:range rdf:resource="#Biscuit"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies36">
+  <rdfs:domain rdf:resource="#Biscuit"/>
+  <rdfs:range rdf:resource="#Milk,Butter"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies37">
+  <rdfs:domain rdf:resource="#Butter,Biscuit"/>
+  <rdfs:range rdf:resource="#Milk"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 1.0</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies38">
+  <rdfs:domain rdf:resource="#Milk,Biscuit"/>
+  <rdfs:range rdf:resource="#Butter"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies39">
+  <rdfs:domain rdf:resource="#Milk,Butter"/>
+  <rdfs:range rdf:resource="#Biscuit"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.75</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies40">
+  <rdfs:domain rdf:resource="#Biscuit"/>
+  <rdfs:range rdf:resource="#Milk,Soap"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.67</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies41">
+  <rdfs:domain rdf:resource="#Milk"/>
+  <rdfs:range rdf:resource="#Soap,Biscuit"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.57</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies42">
+  <rdfs:domain rdf:resource="#Soap"/>
+  <rdfs:range rdf:resource="#Milk,Biscuit"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.57</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies43">
+  <rdfs:domain rdf:resource="#Milk,Biscuit"/>
+  <rdfs:range rdf:resource="#Soap"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.67</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies44">
+  <rdfs:domain rdf:resource="#Soap,Biscuit"/>
+  <rdfs:range rdf:resource="#Milk"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 1.0</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies45">
+  <rdfs:domain rdf:resource="#Milk,Soap"/>
+  <rdfs:range rdf:resource="#Biscuit"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.8</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies46">
+  <rdfs:domain rdf:resource="#Butter,Bread"/>
+  <rdfs:range rdf:resource="#Milk"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies47">
+  <rdfs:domain rdf:resource="#Milk,Bread"/>
+  <rdfs:range rdf:resource="#Butter"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies48">
+  <rdfs:domain rdf:resource="#Milk,Butter"/>
+  <rdfs:range rdf:resource="#Bread"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies49">
+  <rdfs:domain rdf:resource="#Milk,Bread"/>
+  <rdfs:range rdf:resource="#Soap"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies50">
+  <rdfs:domain rdf:resource="#Soap,Bread"/>
+  <rdfs:range rdf:resource="#Milk"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies51">
+  <rdfs:domain rdf:resource="#Milk,Butter"/>
+  <rdfs:range rdf:resource="#Soap"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies52">
+  <rdfs:domain rdf:resource="#Soap,Butter"/>
+  <rdfs:range rdf:resource="#Milk"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 1.0</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies53">
+  <rdfs:domain rdf:resource="#Diapers"/>
+  <rdfs:range rdf:resource="#Milk,Soap"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.67</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies54">
+  <rdfs:domain rdf:resource="#Milk,Diapers"/>
+  <rdfs:range rdf:resource="#Soap"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 1.0</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies55">
+  <rdfs:domain rdf:resource="#Diapers,Soap"/>
+  <rdfs:range rdf:resource="#Milk"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 1.0</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies56">
+  <rdfs:domain rdf:resource="#Bread,Biscuit"/>
+  <rdfs:range rdf:resource="#Milk,Butter"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies57">
+  <rdfs:domain rdf:resource="#Butter,Biscuit"/>
+  <rdfs:range rdf:resource="#Milk,Bread"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.67</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies58">
+  <rdfs:domain rdf:resource="#Butter,Bread"/>
+  <rdfs:range rdf:resource="#Milk,Biscuit"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies59">
+  <rdfs:domain rdf:resource="#Milk,Bread"/>
+  <rdfs:range rdf:resource="#Butter,Biscuit"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies60">
+  <rdfs:domain rdf:resource="#Milk,Butter"/>
+  <rdfs:range rdf:resource="#Biscuit,Bread"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies61">
+  <rdfs:domain rdf:resource="#Bread,Butter,Biscuit"/>
+  <rdfs:range rdf:resource="#Milk"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 1.0</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies62">
+  <rdfs:domain rdf:resource="#Milk,Bread,Biscuit"/>
+  <rdfs:range rdf:resource="#Butter"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies63">
+  <rdfs:domain rdf:resource="#Milk,Butter,Biscuit"/>
+  <rdfs:range rdf:resource="#Bread"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.67</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies64">
+  <rdfs:domain rdf:resource="#Milk,Butter,Bread"/>
+  <rdfs:range rdf:resource="#Biscuit"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 1.0</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies65">
+  <rdfs:domain rdf:resource="#Bread,Biscuit"/>
+  <rdfs:range rdf:resource="#Milk,Soap"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies66">
+  <rdfs:domain rdf:resource="#Soap,Biscuit"/>
+  <rdfs:range rdf:resource="#Milk,Bread"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies67">
+  <rdfs:domain rdf:resource="#Milk,Bread"/>
+  <rdfs:range rdf:resource="#Soap,Biscuit"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies68">
+  <rdfs:domain rdf:resource="#Soap,Bread"/>
+  <rdfs:range rdf:resource="#Milk,Biscuit"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies69">
+  <rdfs:domain rdf:resource="#Milk,Bread,Biscuit"/>
+  <rdfs:range rdf:resource="#Soap"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies70">
+  <rdfs:domain rdf:resource="#Bread,Soap,Biscuit"/>
+  <rdfs:range rdf:resource="#Milk"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 1.0</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies71">
+  <rdfs:domain rdf:resource="#Milk,Soap,Biscuit"/>
+  <rdfs:range rdf:resource="#Bread"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 0.5</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Implies72">
+  <rdfs:domain rdf:resource="#Milk,Soap,Bread"/>
+  <rdfs:range rdf:resource="#Biscuit"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence: 1.0</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#Diapers">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Beer">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Milk">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Soap">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Bread">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Butter">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Beer,Soap">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Bread,Beer">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Butter,Beer">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Bread,Soap">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Milk,Butter">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Biscuit">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Bread,Butter">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Milk,Soap">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Milk,Biscuit">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Milk,Butter,Soap">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Milk,Diapers,Soap">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Milk,Butter,Biscuit">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Milk,Bread,Biscuit">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Milk,Soap,Biscuit">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Milk,Bread,Soap,Biscuit">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Beer,Bread">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Beer,Butter">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Butter,Bread">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Bread,Biscuit">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Butter,Biscuit">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Milk,Bread">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Biscuit,Bread">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Soap,Biscuit">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Soap,Bread">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Soap,Butter">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Milk,Diapers">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Diapers,Soap">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Bread,Butter,Biscuit">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Milk,Butter,Bread">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Bread,Soap,Biscuit">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Milk,Soap,Bread">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+
+</rdf:RDF>
